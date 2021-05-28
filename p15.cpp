@@ -5,9 +5,9 @@ public:
         vector<int> answer;
         sort(nums.begin(), nums.end());
         for(int i=0;i<nums.size();i++){
-            if(i>0 && nums[i]==nums[i-1]){
+            if(i>0 && nums[i]==nums[i-1])
                 continue;
-            }
+            
             int lower = i+1;
             int higher = nums.size()-1;
             while(lower < higher){
