@@ -1,7 +1,6 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        int diff = INT_MAX;
         vector<vector<int>> answers;
         vector<int> answer;
         sort(nums.begin(), nums.end());
