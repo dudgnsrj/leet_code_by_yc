@@ -20,11 +20,8 @@ public:
         for(int i=0;i<new_nums.size();i++){
             for(int j=i+1;j<new_nums.size();j++){
                 for(int k=j+1;k<new_nums.size();k++){
-                    // if(i!=j && j!=k && k!=i){
                     diffs.push_back(abs(new_nums[i]+new_nums[j]+new_nums[k]-target+3*min_num));
                     sums.push_back(new_nums[i]+new_nums[j]+new_nums[k]-target+3*min_num);
-                    // cout<<abs(new_nums[i]+new_nums[j]+new_nums[k]-target+3*min_num)<<' ';
-                    // }
                 }
             }
         }
